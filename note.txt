@@ -1,0 +1,3 @@
+đã thử lấy template của toidicodedao. Vẫn cần phải xem ScrollReveal.js library để lấy scroll animation mượt hơn. 
+
+xem cách toidicodedao dùng CSS và copy lại 1 bản cho mình. vẫn chưa có CSS nên web như con cak
