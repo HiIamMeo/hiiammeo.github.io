@@ -1,28 +1,73 @@
-.header {
-    display: flex;
-    justify-content: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.banner-image{
-    width: 100%; 
-    height: 100%;
+
+body,header,footer,aside,main,nav,section {
+    font-family: "Open Sans", sans-serif;
+}
+
+:root {
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --header-bg-color: rgba(26, 188, 156, 0.8);
+    --bg-gray-light: #dadada;
+}
+header {
+    min-height: 100vh;
+    background-image: url("../images/banner-image.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
     position: relative;
 }
 
-.transparent-content{
+header::before {
+    content: "";
     position: absolute;
-    top: 0;
     left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(26, 188, 156, 0.8); /* Adjust opacity as needed */
+    background-color: var(--header-bg-color);
+    z-index: 0;
 }
 
-.social-profiles {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+header section {
+    position: relative;
+    z-index: 1;
 }
+
+/* .header-content *{  */
+    color: var(--white-color) ;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 60px;
+    margin: 0;
+    bth la no tu apply len ma? dau can "*" phai k
+    /* dm, sao the nho? */
+}
+
+
+/*  */
+
+.header-line {
+    padding: 1px 0;
+    margin: 0 auto;
+    margin-top: -2px;
+    background-position: center;
+    width: 40%;
+    border-bottom: 2px solid var(--white-color);
+    border-top: 2px solid var(--white-color);
+}
+
+.link-icon {
+    color: red;
+    font-size: 35px;
+    margin-right: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+/* cha hieu, doi link moi van k duoc */
