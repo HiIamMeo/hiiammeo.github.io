@@ -40,19 +40,14 @@ header section {
     z-index: 1;
 }
 
-/* .header-content *{  */
+.header-content *{
     color: var(--white-color) ;
     font-weight: 300;
     text-transform: uppercase;
     text-align: center;
     line-height: 60px;
     margin: 0;
-    bth la no tu apply len ma? dau can "*" phai k
-    /* dm, sao the nho? */
 }
-
-
-/*  */
 
 .header-line {
     padding: 1px 0;
