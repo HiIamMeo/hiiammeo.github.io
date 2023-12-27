@@ -1,20 +1,5 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import "style/general.css";
 
-
-body,header,footer,aside,main,nav,section {
-    font-family: "Open Sans", sans-serif;
-}
-
-:root {
-    --white-color: #ffffff;
-    --black-color: #000000;
-    --header-bg-color: rgba(26, 188, 156, 0.8);
-    --bg-gray-light: #dadada;
-}
 header {
     min-height: 100vh;
     background-image: url("../images/banner-image.jpg");
@@ -37,31 +22,48 @@ header::before {
 
 header section {
     position: relative;
+    padding: 50px 0;
     z-index: 1;
 }
 
-.header-content *{
-    color: var(--white-color) ;
-    font-weight: 300;
-    text-transform: uppercase;
+.header-content * {
     text-align: center;
-    line-height: 60px;
-    margin: 0;
+    font-weight: 300;
+    color: var(--white-color);
 }
 
-.header-line {
-    padding: 1px 0;
+.site-name {
+    width: fit-content;
+    width: -moz-fit-content;
     margin: 0 auto;
-    margin-top: -2px;
-    background-position: center;
-    width: 40%;
-    border-bottom: 2px solid var(--white-color);
-    border-top: 2px solid var(--white-color);
+    margin-top: 30px;
+    border-bottom: 4px double var(--white-color);
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.site-slogan {
+    font-size: 40px
 }
 
 .link-icon {
-    color: red;
-    font-size: 35px;
-    margin-right: 1rem;
-    transition: all 0.3s ease-in-out;
+    display: flex;
+    width: fit-content;
+    width: -moz-fit-content;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    column-gap: 40px;
+    font-size: 30px;
+    color: var(--white-color);
+}
+
+.item-icon {
+    padding: 3px 10px;
+    border-radius: 50%;
+    color: var(--white-color);
+    display: inline-block;
+    border-color: 2px solid red;
+    
 }
