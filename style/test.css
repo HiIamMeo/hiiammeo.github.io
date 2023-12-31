@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+:root {
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --header-bg-color: rgba(26, 188, 156, 0.8);
+    --bg-gray-light: #dadada;
+}
+
+header {
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(0deg, var(--header-bg-color), var(--header-bg-color)), url("../images/banner-image.jpg");
+}
+
+.site-header {
+    text-align: center;
+    padding-top: 200px;
+}
+
+.header-content {
+    font-family: 'Raleway',sans-serif;
+    text-transform: uppercase;
+    color: var(--white-color);
+    font-size: 35px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+@media screen and (max-width: 767px){
+    .header-content {
+        font-size: 18px;
+    }
+}
+
+
+.site-name {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 300;
+}
+
+.site-name::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    width: 130%;
+    border-bottom: 4px double var(--white-color);
+}
+
+.site-slogan {
+    font-weight: 300;
+}
+
+.link-icon {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    column-gap: 15px;
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.item-icon {
+    display: inline-block;
+    margin: 10px; /* Adjust margin as needed */
+    border: 2px solid var(--white-color); /* Set border color */
+    border-radius: 50%; /* Optional: For a circular border on rounded icons */
+    padding: 6px 12px; /* Optional: Adjust padding as needed */
+}
+
+.item-icon:hover{
+    background-color: var(--white-color);
+    color: var(--header-bg-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.item-icon i {
+    color: var(--white-color);
+}
+
+.item-icon:hover i {
+    color: var(--header-bg-color);
+    transition: all 0.3s ease-in-out;
+}
+
+
+
