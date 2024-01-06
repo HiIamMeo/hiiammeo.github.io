@@ -201,37 +201,29 @@ body {
 /* Experiences */
 
 .experiences-section {
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .container {
     background-color: red;
-}
-
-.experiences-item {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
+    align-items: center;
+    width: 80%;
+}
+.experiences-item {
+    background-color: lightblue;
 }
 
-.exp-year {
-    position: absolute;
-    margin-left: 200px;
-    background-color: var(--header-bg-color);
-    padding: 10px 20px;
-    color: var(--white-color);
-    font-size: 18px;
-    font-weight: 300;
-    text-transform: uppercase;
-    border-radius: 5px;
+.exp-year{
+    background-color: lightblue;
 }
 
-.exp-details {
-    position: absolute;
-    margin-left: 200px;
+.exp-content {
+    background-color: lightblue;
 }
+
+
 
 /* Responsive */
 @media screen and (max-width: 950px){
@@ -246,6 +238,9 @@ body {
     }
     .skill-content {
         flex-direction: row;
+    }
+    .container {
+        flex-direction: column;
     }
 }
 

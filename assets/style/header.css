@@ -1,0 +1,69 @@
+@import "assets/style/general.css";
+
+header {
+    min-height: 100vh;
+    background-image: url("../images/banner-image.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--header-bg-color);
+    z-index: 0;
+}
+
+header section {
+    position: relative;
+    padding: 50px 0;
+    z-index: 1;
+}
+
+.header-content * {
+    text-align: center;
+    font-weight: 300;
+    color: var(--white-color);
+}
+
+.site-name {
+    width: fit-content;
+    width: -moz-fit-content;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-bottom: 4px double var(--white-color);
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.site-slogan {
+    font-size: 40px
+}
+
+.link-icon {
+    display: flex;
+    width: fit-content;
+    width: -moz-fit-content;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    column-gap: 40px;
+    font-size: 30px;
+    color: var(--white-color);
+}
+
+.item-icon {
+    padding: 3px 10px;
+    border-radius: 50%;
+    color: var(--white-color);
+    display: inline-block;
+    border-color: 2px solid red;
+    
+}
