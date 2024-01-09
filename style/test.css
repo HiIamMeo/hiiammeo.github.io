@@ -200,30 +200,41 @@ body {
 
 /* Experiences */
 
-.experiences-section {
-    margin-top: 40px;
+.experience-section {
+    margin-top: 50px;
 }
 
-.container {
-    background-color: red;
+.experience-content {
+    margin-bottom: 30px;
+    border-radius: 5px;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 80%;
-}
-.experiences-item {
-    background-color: lightblue;
+    justify-content: center;
+    
+    
 }
 
-.exp-year{
-    background-color: lightblue;
-}
-
-.exp-content {
+.job-title h4{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300px;
     background-color: lightblue;
 }
 
 
+.job-year {
+    padding-top: 24px;
+    width: 120px;
+    height: 120px;
+    
+    border-radius: 50%;
+    
+    background-color: transparent;
+}
+
+.job-year p{
+    text-align: center;
+    background-color: red;
+}
 
 /* Responsive */
 @media screen and (max-width: 950px){
