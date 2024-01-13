@@ -177,11 +177,8 @@ body {
 /* Skills */
 .skill-content {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    margin:50px 20px;
-    border-radius: 5px;
-    flex-wrap: wrap;
+    margin: 50px auto;
 }
 
 .section-box {
@@ -210,25 +207,30 @@ body {
 
 /* Experiences */
 
-.experience-section {
-    margin-top: 50px;
-    background-color: var(--white-color);
-    border-radius: 5px;
-    column-gap: 30px;
-    padding-top: 20px;
-    margin-bottom: 40px;
-    justify-items: center;
-}
-
 .experience-content {
-    margin-bottom: 30px;
-    border-radius: 5px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    
-    
 }
 
+.experience-section {
+    background-color: var(--white-color);
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 3px 3px 0 rgba( 1,2,2,0.05);
+    margin: 50px auto;
+}
+
+.exp-name {
+    width: 30%;
+    text-align: right;
+    float:left;
+}
+.exp-year {
+    width: 30%;
+}
+
+/* 
 .job-title h4{
     text-align: right;
     text-transform: uppercase;
@@ -251,7 +253,7 @@ body {
     color: var(--white-color);
     transition: all 0.3s ease-in-out;
 
-}
+} */
 
 
 /* Responsive */
@@ -266,19 +268,13 @@ body {
         flex-direction: column;
     }
     .skill-content {
-        flex-direction: row;
     }
-    .container {
-        flex-direction: column;
-        max-width: 300px;
-    }
-    .job-title h4{
-        text-align: center;
-    }
-    .job-year {
-        margin-left: 30%;
-        margin-top: 20px;
-        margin-bottom: 20px;
+    
+}
+
+@media screen and (max-width: 450px) {
+    .experience-section {
+        max-width: 350px;
     }
 }
 
