@@ -71,19 +71,23 @@ body {
 
 .link-icon {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     justify-items: center;
     column-gap: 15px;
     margin-top: 20px;
     font-size: 24px;
+    border-radius: 50%;
 }
 
 .item-icon {
-    display: inline-block;
-    margin: 10px; /* Adjust margin as needed */
+    
+    margin: 10px; 
     border: 2px solid var(--white-color); /* Set border color */
     border-radius: 50%; /* Optional: For a circular border on rounded icons */
-    padding: 6px 12px; /* Optional: Adjust padding as needed */
+    padding: 6px 12px;
+    max-width: 50px;
+    max-height: 50px;
 }
 
 .item-icon:hover{
@@ -93,7 +97,7 @@ body {
 }
 
 .item-icon i {
-    display: relative;
+    display: absolute;
     color: var(--white-color);
 }
 
@@ -107,25 +111,42 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #000000;
+    background-color: rgb(50, 50, 58);
     width: 200px;
     height: 100%;
 }
 
 .nav-bar-func {
+    height: 80px;
     display: flex;
     flex-direction: row;
-    background-color: var(--header-bg-color);
+    justify-content: left;
+    justify-items: left;
+    background-color: #34495e;
 }
 
 .nav-bar-func h1{
+    color: var(--white-color);
     text-align: left;
+    font-size: 36px;
     padding: 20px 30px;
 }
 
+.bar-button {
+    background-color: transparent;
+    margin-top: 30px;
+    width: 24px;
+    height: 24px;
+}
+
+.nav-bar-func i {
+    color: rgb(117, 134, 151);
+    font-size: 24px;
+    padding-top: 30px;
+    justify-self: center;
+}
+
 .nav-bar-left {
-    top: 0;
-    left: 0;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -133,16 +154,27 @@ body {
     transition: all 0.3s ease-in-out;
     text-align: left;
 }
+ 
+.nav-bar-left:hover a {
+    background-color: rgb(40, 40, 46);
+}
+
+.nav-bar-left i {
+    font-size: 16px;
+    padding: 0px 10px;
+}
 
 .nav-bar-left a {
     display: block;
+    text-align: left;
     text-decoration: none;
     color: var(--white-color);
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 300;
-    padding: 10px 0px;
+    padding: 12px 10px;
     transition: all 0.3s ease-in-out;
-    background-color: lightblue;
+    background-color: rgb(50, 50, 58);
+    border-bottom: 1px solid rgb(60, 60, 68);
 }
 
 
