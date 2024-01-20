@@ -108,6 +108,7 @@ body {
 
 /* Navigation */
 .site-header .btn {
+    display: block;
     position: fixed;
     border-radius: 0px;
     top: 50px;
@@ -127,17 +128,18 @@ body {
     background-color: rgb(40, 40, 46);
 }
 
+header .nav-bar {
+    transition: all 0.3s ease-in-out;
+}
 
 .nav-bar {
-    display: none;
+    /* display: none; */
     position: fixed;
     top: 0;
-    left: 0;
+    left: -200px;
     background-color: rgb(50, 50, 58);
     width: 200px;
     height: 100%;
-
-
 }
 
 .nav-bar-func {
