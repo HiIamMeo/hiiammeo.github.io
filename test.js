@@ -41,18 +41,18 @@ function scrollToSection() {
     });
 }
 
-function skillResize() {
-    // const skill1 = document.getElementsByClassName('.col-md-4')[0];
-    // const skill2 = document.getElementsByClassName('.col-md-4')[1];
-    // const skill3 = document.getElementsByClassName('.col-md-4')[2];
+// function skillResize() {
+//     // const skill1 = document.getElementsByClassName('.col-md-4')[0];
+//     // const skill2 = document.getElementsByClassName('.col-md-4')[1];
+//     // const skill3 = document.getElementsByClassName('.col-md-4')[2];
 
-    const skill = document.getElementById('skill');
-    if (window.innerWidth < 992) {
-        skill.classList.remove('col-md-4');
-    }
-}
+//     const skill = document.getElementById('skill');
+//     if (window.innerWidth < 992) {
+//         skill.classList.remove('col-md-4');
+//     }
+// }
 
 
 navBar();
 scrollToSection();
-skillResize();
+// skillResize();
