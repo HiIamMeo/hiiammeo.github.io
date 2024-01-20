@@ -158,18 +158,18 @@ header .nav-bar {
     padding: 20px 30px;
 }
 
-.bar-button {
-    background-color: transparent;
-    margin-top: 30px;
-    width: 24px;
-    height: 24px;
-}
-
 .nav-bar-func i {
     color: rgb(117, 134, 151);
     font-size: 24px;
-    padding-top: 30px;
+    /* padding-top: 30px; */
+    margin: 30px 0px;
     justify-self: center;
+}
+
+.nav-bar-func i:hover {
+    cursor: pointer;
+    color: var(--white-color);
+    transition: all 0.3s ease-in-out;
 }
 
 /* .nav-bar-left {
@@ -216,15 +216,15 @@ header .nav-bar {
     text-align: left;
     list-style-type: none; /* Remove the bullets from the list */
     margin: 0; /* Remove the default margin of the list */
-    padding: 10px 0px;
+    padding: 0px 0px;
 }
 
 .nav-bar-left li {
     float: left; /* Align the list items horizontally */
-    padding: 14px;
+    padding: 12px;
     width: 100%;
-    border-width: 100%;
     border-bottom: 2px solid rgb(40, 40, 46);
+    transition: all 0.3s ease-in-out;
 }
 
 .nav-bar-left li:last-child {
@@ -236,10 +236,11 @@ header .nav-bar {
     
 }
 
-.nav-bar-left a {
+.nav-bar-left p {
+    margin: 0 auto;
     color: #f2f2f2; /* Set the color of the links */
     text-align: left; /* Center the text of the links */
-    padding: 14px 16px; /* Add some padding to the links */
+    padding: 0px 16px; /* Add some padding to the links */
     text-decoration: none; /* Remove the underline from the links */
     font-size: 17px; /* Set the font size of the links */
     width: 100%;
@@ -248,14 +249,9 @@ header .nav-bar {
 .nav-bar-left li:hover {
     cursor: pointer;
     background-color: #ddd; /* Change the background color of the links on hover */
-    a {
+    p {
         color: black;
     }
-}
-
-.nav-bar-left a.active {
-    background-color: #04AA6D; /* Set the background color of the active link */
-    color: white; /* Set the color of the active link */
 }
 
 /* About */
@@ -286,7 +282,6 @@ header .nav-bar {
 
 
 .profile-content-left img{
-    display: absolute;
     width: 250px;
     height: 250px;
     object-fit: cover;
@@ -298,7 +293,6 @@ header .nav-bar {
 }
 
 .profile-content-middle {
-    display: absolute;
     max-width: 550px;
     background-color: var(--white-color);
     padding: 16px;
@@ -318,6 +312,15 @@ header .nav-bar {
 
 .about-content {
     margin-bottom: 31px;
+}
+
+.profile-content-middle a {
+    background-color: var(--header-bg-color);
+    padding: 8px;
+}
+
+.profile-content-middle a:hover {
+    background-color: var(--header-bg-color);
 }
 
 .profile-content-right {
@@ -385,13 +388,17 @@ header .nav-bar {
     column-gap: 40px;
 }
 
+.exp-flex:hover {
+
+}
+
 .exp-name {
     width: 30%;
     text-align: right;
 }
 .exp-year {
-    width: 140px;
-    height: 140px;
+    width: 130px;
+    height: 130px;
     padding-top: 20px;
     text-align: center;
     border-radius: 100%;
@@ -402,7 +409,6 @@ header .nav-bar {
     background-color: var(--header-bg-color);
     color: var(--white-color);
     transition: all 0.3s ease-in-out;
-
 }
 .exp-desc {
     width: 50%;
@@ -463,12 +469,14 @@ header .nav-bar {
 }
 
 .edu-cmt {
+    text-align: left;
     border-top: 2px solid #dddfeb;
     padding-top: 18px;
 }
 
-
-
+.col-md-12 {
+    
+}
 /* Responsive */
 @media screen and (max-width: 950px){
     .header-content {
@@ -478,7 +486,20 @@ header .nav-bar {
         font-size: 20px;
     }
     .profile-content {
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .profile-content-left {
+        order: 1;
+    }
+
+    .profile-content-right {
+        order: 2;
+    }
+
+    .profile-content-middle {
+        order: 3;
     }
 
     .exp-flex {

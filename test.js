@@ -13,6 +13,7 @@ function navBar() {
 }
 
 function scrollToSection() {
+    const home = document.querySelector('.nav-home');
     const about = document.querySelector('.nav-about');
     const skill = document.querySelector('.nav-skill');
     const exp = document.querySelector('.nav-exp');
@@ -23,26 +24,35 @@ function scrollToSection() {
     const scrollToExp =  document.getElementsByClassName('default-body')[2].offsetTop;
     const scrollToEdu =  document.getElementsByClassName('default-body')[3].offsetTop;
 
-    for (let i = 0; i < 4; i++) {
-        about.addEventListener('click', function () {
-            window.scrollTo(0,0);
-            window.scrollTo({ top: scrollToAbout, behavior: 'smooth'});
-        });
-        skill.addEventListener('click', function () {
-            window.scrollTo(0,0);
-            window.scrollTo({ top: scrollToSkill, behavior: 'smooth'});
-        });
-        exp.addEventListener('click', function () {
-            window.scrollTo(0,0);
-            window.scrollTo({ top: scrollToExp, behavior: 'smooth'});
-        });
-        edu.addEventListener('click', function () {
-            window.scrollTo(0,0);
-            window.scrollTo({ top: scrollToEdu, behavior: 'smooth'});
-        });
+    home.addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: 'smooth'});
+    });
+    about.addEventListener('click', function () {
+        window.scrollTo({ top: scrollToAbout, behavior: 'smooth'});
+    });
+    skill.addEventListener('click', function () {
+        window.scrollTo({ top: scrollToSkill, behavior: 'smooth'});
+    });
+    exp.addEventListener('click', function () {
+        window.scrollTo({ top: scrollToExp, behavior: 'smooth'});
+    });
+    edu.addEventListener('click', function () {
+        window.scrollTo({ top: scrollToEdu, behavior: 'smooth'});
+    });
+}
+
+function skillResize() {
+    // const skill1 = document.getElementsByClassName('.col-md-4')[0];
+    // const skill2 = document.getElementsByClassName('.col-md-4')[1];
+    // const skill3 = document.getElementsByClassName('.col-md-4')[2];
+
+    const skill = document.getElementById('skill');
+    if (window.innerWidth < 992) {
+        skill.classList.remove('col-md-4');
     }
 }
 
 
 navBar();
 scrollToSection();
+skillResize();
