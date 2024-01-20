@@ -107,13 +107,37 @@ body {
 }
 
 /* Navigation */
+.site-header .btn {
+    position: fixed;
+    border-radius: 0px;
+    top: 50px;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(50, 50, 58);
+}
+
+.site-header .btn i {
+    color: var(--white-color);
+    font-size: 24px;
+    justify-self: center;
+}
+
+.site-header .btn:active {
+    background-color: rgb(40, 40, 46);
+}
+
+
 .nav-bar {
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
     background-color: rgb(50, 50, 58);
     width: 200px;
     height: 100%;
+
+
 }
 
 .nav-bar-func {
@@ -220,7 +244,7 @@ body {
 }
 
 .nav-bar-left li:hover {
-    pointer: cursor;
+    cursor: pointer;
     background-color: #ddd; /* Change the background color of the links on hover */
     a {
         color: black;
