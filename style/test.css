@@ -177,38 +177,60 @@ body {
     border-bottom: 1px solid rgb(60, 60, 68);
 } */
 
-.nav-bar {
-    background-color: #333; /* Set the background color of the nav bar */
+.nav-bar-left {
+    background-color: transparent; /* Set the background color of the nav bar */
     overflow: hidden; /* Hide the overflow of the nav bar */
-  }
+}
   
-  .nav-bar ul {
+.nav-bar-left ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    text-align: left;
     list-style-type: none; /* Remove the bullets from the list */
     margin: 0; /* Remove the default margin of the list */
-    padding: 0; /* Remove the default padding of the list */
-  }
-  
-  .nav-bar li {
+    padding: 10px 0px;
+}
+
+.nav-bar-left li {
     float: left; /* Align the list items horizontally */
-  }
-  
-  .nav-bar a {
+    padding: 14px;
+    width: 100%;
+    border-width: 100%;
+    border-bottom: 2px solid rgb(40, 40, 46);
+}
+
+.nav-bar-left li:last-child {
+    border-bottom: none; /* Remove border of the last item */
+}
+
+.nav-bar-left i {
+    padding-right: 14px;
+    
+}
+
+.nav-bar-left a {
     color: #f2f2f2; /* Set the color of the links */
-    text-align: center; /* Center the text of the links */
+    text-align: left; /* Center the text of the links */
     padding: 14px 16px; /* Add some padding to the links */
     text-decoration: none; /* Remove the underline from the links */
     font-size: 17px; /* Set the font size of the links */
-  }
-  
-  .nav-bar a:hover {
+    width: 100%;
+}
+
+.nav-bar-left li:hover {
+    pointer: cursor;
     background-color: #ddd; /* Change the background color of the links on hover */
-    color: black; /* Change the color of the links on hover */
-  }
-  
-  .nav-bar a.active {
+    a {
+        color: black;
+    }
+}
+
+.nav-bar-left a.active {
     background-color: #04AA6D; /* Set the background color of the active link */
     color: white; /* Set the color of the active link */
-  }
+}
 
 /* About */
 .section-title h1 {
