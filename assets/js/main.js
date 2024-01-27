@@ -10,6 +10,13 @@ function navBar() {
         navSiteButton.style.display = 'block';
         navBar.style.left = '-200px';
     });
+
+    document.addEventListener('mousedown', function (e) {
+        if (e.target !== navSiteButton && e.target !== barButton && e.target !== navBar) {
+            navSiteButton.style.display = 'block';
+            navBar.style.left = '-200px';
+        }
+    });
 }
 
 function scrollToSection() {
