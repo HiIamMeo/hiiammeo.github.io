@@ -1,0 +1,29 @@
+/* Skills */
+.skill-content {
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+}
+
+.section-box {
+    background-color: var(--white-color);
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 3px 3px 0 rgba( 1,2,2,0.05);
+    margin: 0px 30px;
+    margin-top: 20px;
+}
+
+.section-box h2 {
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #32323a;
+    margin-top: 20px;
+}
+
+.section-box li{
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(34, 34, 34, 0.5);
+}

@@ -1,0 +1,147 @@
+/* Navigation */
+.site-header .btn {
+    display: block;
+    position: fixed;
+    border-radius: 0px;
+    top: 50px;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(50, 50, 58);
+}
+
+.site-header .btn i {
+    color: var(--white-color);
+    font-size: 24px;
+    justify-self: center;
+}
+
+.site-header .btn:active {
+    background-color: rgb(40, 40, 46);
+}
+
+header .nav-bar {
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-bar {
+    /* display: none; */
+    position: fixed;
+    top: 0;
+    left: -200px;
+    background-color: rgb(50, 50, 58);
+    width: 200px;
+    height: 100%;
+}
+
+.nav-bar-func {
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    justify-items: left;
+    background-color: #34495e;
+}
+
+.nav-bar-func h1{
+    color: var(--white-color);
+    text-align: left;
+    font-size: 36px;
+    padding: 20px 30px;
+}
+
+.nav-bar-func i {
+    color: rgb(117, 134, 151);
+    font-size: 24px;
+    /* padding-top: 30px; */
+    margin: 30px 0px;
+    justify-self: center;
+}
+
+.nav-bar-func i:hover {
+    cursor: pointer;
+    color: var(--white-color);
+    transition: all 0.3s ease-in-out;
+}
+
+/* .nav-bar-left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+    text-align: left;
+}
+ 
+.nav-bar-left:hover a {
+    background-color: rgb(40, 40, 46);
+}
+
+.nav-bar-left i {
+    font-size: 16px;
+    padding: 0px 10px;
+}
+
+.nav-bar-left a {
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 14px;
+    font-weight: 300;
+    padding: 12px 10px;
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(50, 50, 58);
+    border-bottom: 1px solid rgb(60, 60, 68);
+} */
+
+.nav-bar-left {
+    background-color: transparent; /* Set the background color of the nav bar */
+    overflow: hidden; /* Hide the overflow of the nav bar */
+}
+  
+.nav-bar-left ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    text-align: left;
+    list-style-type: none; /* Remove the bullets from the list */
+    margin: 0; /* Remove the default margin of the list */
+    padding: 0px 0px;
+}
+
+.nav-bar-left li {
+    float: left; /* Align the list items horizontally */
+    padding: 12px;
+    width: 100%;
+    border-bottom: 2px solid rgb(40, 40, 46);
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-bar-left li:last-child {
+    border-bottom: none; /* Remove border of the last item */
+}
+
+.nav-bar-left i {
+    padding-right: 14px;
+    
+}
+
+.nav-bar-left p {
+    margin: 0 auto;
+    color: #f2f2f2; /* Set the color of the links */
+    text-align: left; /* Center the text of the links */
+    padding: 0px 16px; /* Add some padding to the links */
+    text-decoration: none; /* Remove the underline from the links */
+    font-size: 17px; /* Set the font size of the links */
+    width: 100%;
+}
+
+.nav-bar-left li:hover {
+    cursor: pointer;
+    background-color: #ddd; /* Change the background color of the links on hover */
+    p {
+        color: black;
+    }
+}

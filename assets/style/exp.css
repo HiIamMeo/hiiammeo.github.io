@@ -1,0 +1,74 @@
+/* Experiences */
+
+.experience-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.experience-section {
+    background-color: var(--white-color);
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 3px 3px 0 rgba( 1,2,2,0.05);
+    margin: 0px auto;
+    margin-bottom: 20px;
+}
+
+.exp-flex {
+    display: flex;
+    flex-direction: row;
+    column-gap: 40px;
+}
+
+.exp-flex:hover {
+
+}
+
+.exp-name {
+    width: 30%;
+    text-align: right;
+}
+.exp-year {
+    width: 130px;
+    height: 130px;
+    padding-top: 20px;
+    text-align: center;
+    border-radius: 100%;
+    border: 10px solid var(--bg-gray-light);
+    margin-top: -40px;
+}
+.exp-year:hover {
+    background-color: var(--header-bg-color);
+    color: var(--white-color);
+    transition: all 0.3s ease-in-out;
+}
+.exp-desc {
+    width: 50%;
+}
+
+/* 
+.job-title h4{
+    text-align: right;
+    text-transform: uppercase;
+    font-weight: 300px;
+    background-color: lightblue;
+}
+
+
+.job-year {
+    width: 140px;
+    height: 140px;
+    padding-top: 20px;
+    text-align: center;
+    border-radius: 100%;
+    border: 10px solid var(--bg-gray-light);
+}
+
+.job-year:hover {
+    background-color: var(--header-bg-color);
+    color: var(--white-color);
+    transition: all 0.3s ease-in-out;
+
+} */
