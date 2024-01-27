@@ -1,0 +1,83 @@
+/* Responsive */
+@media screen and (max-width: 950px){
+    .header-content {
+        font-size: 20px;
+    }
+    .link-icon {
+        font-size: 20px;
+    }
+    .profile-content {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .profile-content-left {
+        order: 1;
+    }
+
+    .profile-content-right {
+        order: 2;
+    }
+
+    .profile-content-middle {
+        order: 3;
+    }
+
+    .exp-flex {
+        flex-direction: column !important;
+        justify-items: center;
+        justify-content: center;
+        row-gap: 20px;
+    }
+    .exp-name {
+        text-align: center;
+        margin: 0 auto;
+        width:max-content;
+    }
+    .exp-year {
+        margin-top: 0px;
+        margin: 0 auto;
+    }
+    .exp-desc {
+        text-align: left;
+        margin: 0 auto;
+        width: fit-content;
+        width: -moz-fit-content;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .experience-section {
+        max-width: 350px;
+    }
+
+    .edu-section{
+        max-width: 300px;
+    }
+    .exp-flex {
+        max-width: 250px !important;
+        flex-direction: column;
+        justify-items: center;
+        justify-content: center;
+        row-gap: 20px;
+    }
+    .exp-name {
+        text-align: center;
+        margin: 0 auto;
+        width:max-content;
+    }
+    .exp-year {
+        margin-top: 0px;
+        margin: 0 auto;
+    }
+    .exp-desc {
+        text-align: left;
+        margin: 0 auto;
+        width: fit-content;
+        width: -moz-fit-content;
+    }
+}
+
+/* .homepage-version-one {
+    padding-bottom: 500px;
+} */

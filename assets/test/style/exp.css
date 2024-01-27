@@ -22,9 +22,9 @@
     column-gap: 40px;
 }
 
-.exp-flex:hover {
+/* .exp-flex:hover {
 
-}
+} */
 
 .exp-name {
     width: 30%;
@@ -39,11 +39,11 @@
     border: 10px solid var(--bg-gray-light);
     margin-top: -40px;
 }
-.exp-year:hover {
+/* .exp-year:hover {
     background-color: var(--header-bg-color);
     color: var(--white-color);
     transition: all 0.3s ease-in-out;
-}
+} */
 .exp-desc {
     width: 50%;
 }
