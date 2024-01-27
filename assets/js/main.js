@@ -26,10 +26,10 @@ function scrollToSection() {
     const exp = document.querySelector('.nav-exp');
     const edu = document.querySelector('.nav-edu');
 
-    const scrollToAbout =  document.getElementsByClassName('default-body')[0].offsetTop;
-    const scrollToSkill =  document.getElementsByClassName('default-body')[1].offsetTop;
-    const scrollToExp =  document.getElementsByClassName('default-body')[2].offsetTop;
-    const scrollToEdu =  document.getElementsByClassName('default-body')[3].offsetTop;
+    const scrollToAbout =  document.getElementsByClassName('section-title')[0].offsetTop;
+    const scrollToSkill =  document.getElementsByClassName('section-title')[1].offsetTop;
+    const scrollToExp =  document.getElementsByClassName('section-title')[2].offsetTop;
+    const scrollToEdu =  document.getElementsByClassName('section-title')[3].offsetTop;
 
     home.addEventListener('click', function () {
         window.scrollTo({ top: 0, behavior: 'smooth'});
