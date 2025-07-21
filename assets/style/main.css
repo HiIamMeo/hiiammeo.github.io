@@ -558,6 +558,7 @@ header .nav-bar {
 
   .skill-flex {
     flex-direction: column;
+    gap: 16px;
   }
 
   #skill {
