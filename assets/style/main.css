@@ -418,6 +418,15 @@ header .nav-bar {
   font-weight: 300;
   /* color: rgba(34, 34, 34, 0.5); */
 }
+.section-box a {
+  background-color: var(--header-bg-color);
+  /* padding: 8px; */
+  letter-spacing: 1px;
+}
+
+.section-box a:hover {
+    background-color: var(--header-bg-color);
+}
 
 /* Experiences */
 
@@ -531,6 +540,16 @@ header .nav-bar {
   text-align: left;
   border-top: 2px solid #dddfeb;
   padding-top: 18px;
+}
+
+.edu-cmt  a {
+  background-color: var(--header-bg-color);
+  /* padding: 8px; */
+  letter-spacing: 1px;
+}
+
+.edu-cmt  a:hover {
+    background-color: var(--header-bg-color);
 }
 
 /* Responsive */
